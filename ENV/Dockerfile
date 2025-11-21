@@ -1,4 +1,4 @@
 FROM cmd:v1
 ENV project="roboshop"\
-    environment="dev"
+    environment="dev"\
     name="Manikanta"
