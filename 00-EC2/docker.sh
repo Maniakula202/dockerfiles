@@ -2,8 +2,8 @@
 
 # growing the /home volume for terraform purpose
 growpart /dev/nvme0n1 4
-lvextend -L +30G /dev/mapper/RootVG-homeVol
-xfs_growfs /home
+lvextend -L +30G /dev/mapper/RootVG-varVol
+xfs_growfs /var
 
 # Installing docker 
 sudo dnf -y install dnf-plugins-core
